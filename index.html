@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Pet Registry</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ethers.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Decentralized Pet Registry 🐾</h1>
+        
+        <div class="card">
+            <h2>Wallet Connection</h2>
+            <button id="connectWalletBtn">Connect MetaMask</button>
+            <p>Status: <span id="walletStatus">Disconnected</span></p>
+        </div>
+
+        <div class="card">
+            <h2>Register a Pet</h2>
+            <input type="number" id="regPetId" placeholder="Microchip ID (e.g., 101)">
+            <input type="text" id="regPetName" placeholder="Pet Name">
+            <input type="text" id="regPetBreed" placeholder="Breed">
+            <button id="registerBtn">Register Pet</button>
+        </div>
+
+        <div class="card">
+            <h2>Find Pet Details</h2>
+            <input type="number" id="searchPetId" placeholder="Microchip ID to Search">
+            <button id="searchBtn">Get Details</button>
+            <div id="petResult" style="margin-top: 10px; font-weight: bold;"></div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
